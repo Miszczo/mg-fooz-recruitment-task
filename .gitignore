@@ -1,0 +1,10 @@
+# Ignore task directory
+task/
+
+# Ignore .ai directory
+.ai/
+
+.cursorrules/
+
+# Ignore .cursor rules directory
+.cursor/
