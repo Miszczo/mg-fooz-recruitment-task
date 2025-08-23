@@ -1,10 +1,11 @@
-# Ignore task directory
-task/
+# Ignore everything by default
+/*
 
-# Ignore .ai directory
-.ai/
+# Keep this file
+!.gitignore
 
-.cursorrules/
-
-# Ignore .cursor rules directory
-.cursor/
+# Whitelist only the child theme
+!/wp-content/
+!/wp-content/themes/
+!/wp-content/themes/twentytwentyfive-child/
+!/wp-content/themes/twentytwentyfive-child/**
