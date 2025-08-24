@@ -27,7 +27,7 @@
 ## Answers to assignment (Task #1–#5)
 
 ### Task #1 – Where to place custom CSS?
-- `assets/css/main.css` (child theme), complemented by tokens in `theme.json`. No heavy CSS frameworks.
+- `assets/css/main.css` (child theme), complemented by tokens in `theme.json`. 
 
 ### Task #2 – Load custom JavaScript in footer
 - File: `assets/js/scripts.js`.
