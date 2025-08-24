@@ -2,6 +2,10 @@
   "$schema": "https://schemas.wp.org/trunk/theme.json",
   "version": 2,
   "settings": {
+    "layout": {
+      "contentSize": "72rem",
+      "wideSize": "90rem"
+    },
     "color": {
       "palette": [
         { "slug": "brand", "name": "Brand", "color": "#fe317b" },
@@ -12,7 +16,18 @@
       ]
     },
     "spacing": {
-      "units": ["px", "rem", "%"]
+      "units": ["px", "rem", "%"],
+      "spacingScale": {
+        "steps": 6
+      },
+      "spacingSizes": [
+        { "slug": "10", "size": "0.25rem", "name": "10" },
+        { "slug": "20", "size": "0.5rem", "name": "20" },
+        { "slug": "30", "size": "1rem", "name": "30" },
+        { "slug": "40", "size": "1.5rem", "name": "40" },
+        { "slug": "50", "size": "2rem", "name": "50" },
+        { "slug": "60", "size": "3rem", "name": "60" }
+      ]
     },
     "typography": {
       "fontSizes": [
@@ -21,6 +36,17 @@
         { "slug": "lg", "size": "1.125rem", "name": "Large" },
         { "slug": "xl", "size": "1.5rem", "name": "XL" }
       ]
+    }
+  }
+  ,
+  "styles": {
+    "blocks": {
+      "core/navigation": {
+        "typography": { "fontSize": "var:preset|font-size|base" }
+      },
+      "core/navigation-link": {
+        "typography": { "fontSize": "var:preset|font-size|base" }
+      }
     }
   }
 }

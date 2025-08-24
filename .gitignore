@@ -1,11 +1,13 @@
-# Ignore everything by default
-/*
+# Ignore everything
+*
 
-# Keep this file
+# But keep this file
 !.gitignore
 
-# Whitelist only the child theme
-!/wp-content/
+# Whitelist only the child theme directory. This is done by ignoring the
+# contents of each parent directory, then re-including the specific subdirectory.
+/wp-content/*
 !/wp-content/themes/
+
+/wp-content/themes/*
 !/wp-content/themes/twentytwentyfive-child/
-!/wp-content/themes/twentytwentyfive-child/**
