@@ -1,8 +1,9 @@
 # Ignore everything
 *
 
-# But keep this file
+# But keep these files
 !.gitignore
+!README.md
 
 # Whitelist only the child theme directory. This is done by ignoring the
 # contents of each parent directory, then re-including the specific subdirectory.
